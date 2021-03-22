@@ -18,7 +18,7 @@ date.setHours(22);
 document.querySelector('.time-finish1').innerHTML = `${dataTime} ${date.toLocaleTimeString()} UTC+7<br>(${date.getTime()})`;
 
 date.setDate(date.getDate()+7);
-//date.setDate(date.getDate() + (dayOfWeek + 7 - date.getDay()) % 7);
+
 dataTime = `${date.getFullYear()}-${date.getMonth()+1>=10? date.getMonth()+1:'0'+(date.getMonth()+1)}-${date.getDate()>=10? date.getDate():'0'+(date.getDate())}`;
 date.setHours(19);
 
